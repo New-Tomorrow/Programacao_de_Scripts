@@ -1,0 +1,11 @@
+.ganhador {
+    color: #0066b3;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-left: 40px;
+    font-size: 1.8rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: -14px;
+}
+
