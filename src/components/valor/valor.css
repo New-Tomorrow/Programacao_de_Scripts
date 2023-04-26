@@ -1,15 +1,6 @@
-.valorM{
-    color: #209869;
+.valor{
     font-weight: bold;
     margin-left: 14vh;
-    max-width: 250px;
     font-size: 1.5rem;
     
-}
-.valorL{
-    color: #930089;
-    font-weight: bold;
-    margin-left: 14vh;
-    max-width: 200px;
-    font-size: 1.5rem;
 }

@@ -1,6 +1,7 @@
 export interface LoteriaProps {
     megasena: Props;
     lotofacil: Props;
+    quina: Props;
 }
 
 export interface Props {
@@ -13,6 +14,6 @@ export interface Props {
     numeroDoConcurso: number;
     quantidadeGanhadores: number;
     tipoJogo: string;
-    valorEstimadoProximoConcurso: string;
+    valorEstimadoProximoConcurso: number;
     valorPremio: string;
 }

@@ -1,6 +1,5 @@
 import './dataSorteio.css'
 
-
 function DataSorteio({data}:any) {
 
     return (

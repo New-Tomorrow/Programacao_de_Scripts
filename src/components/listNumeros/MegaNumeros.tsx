@@ -1,11 +1,9 @@
-
 import "./listNumeros.css";
-
 
 function MegaNumeros({ numeros }: any){
 
     return(
-        <div className="circulo">
+        <div className="circuloM">
             <ul>
                 {numeros ? numeros.map((numero: any) => {
                     return <li>{numero}</li>

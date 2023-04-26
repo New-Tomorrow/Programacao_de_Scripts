@@ -1,9 +1,9 @@
 import "./listNumeros.css";
 
-function LotoNumeros({ numeros }: any){
+function QuinaNumeros({ numeros }: any){
 
     return(
-        <div className="list">
+        <div className="circuloQ">
             <ul>
                 {numeros ? numeros.map((numero: any) => {
                     return <li>{numero}</li>
@@ -14,4 +14,4 @@ function LotoNumeros({ numeros }: any){
     );
 } 
 
-export default LotoNumeros;
+export default QuinaNumeros;

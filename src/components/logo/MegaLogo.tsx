@@ -1,21 +1,21 @@
 import "./logo.css";
 import logomegasena from '../../assets/trevo-megasena.png'
 
-function MegaLogo(){
+function MegaLogo() {
 
-    return(
+    return (
 
-            <div className="logotext">
+        <div className="logotext">
 
-                <img className="logo" src={logomegasena} />
+            <img className="logo" src={logomegasena} />
 
-                <h1 className="text_mega">MEGA-SENA</h1>
+            <h1 className="text" style={{ color: '#209869' }}>MEGA-SENA</h1>
 
 
-            </div>
+        </div>
 
 
     );
 
 
-}export default MegaLogo;
+} export default MegaLogo;

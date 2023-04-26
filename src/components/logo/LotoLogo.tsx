@@ -9,7 +9,7 @@ function LotoLogo(){
 
                 <img className="logo" src={logoloto} />
 
-                <h1 className="text_loto">LOTOFÁCIL</h1>
+                <h1 className="text" style={{color: '#930089'}}>LOTOFÁCIL</h1>
 
 
             </div>

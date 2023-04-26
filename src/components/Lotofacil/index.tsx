@@ -4,11 +4,7 @@ import Ganhador from "../ganhador/Ganhador";
 import LotoNumeros from "../listNumeros/LotoNumeros";
 import LotoLogo from "../logo/LotoLogo";
 import ProximoConsurso from "../proximoConcurso/ProximoConcurso";
-import ValorLoto from "../valor/ValorLoto";
-
-
-
-
+import Valor from "../valor/Valor";
 import "../../app.css";
 
 export default function Lotofacil() {
@@ -33,7 +29,7 @@ export default function Lotofacil() {
         <div className="coluna_1">
           <LotoLogo></LotoLogo>
           <DataSorteio data={lotofacil.dataProximoConcurso} />
-          <ValorLoto valor={`R$ ${lotofacil.valorEstimadoProximoConcurso.toLocaleString()}`} />
+          <div style={{color:'#930089'}} ><Valor valor={lotofacil.valorEstimadoProximoConcurso.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})} /></div>
          
         </div>
 
@@ -41,7 +37,8 @@ export default function Lotofacil() {
           <LotoNumeros numeros={lotofacil.dezenas} />
           <Ganhador ganhador={verificaLoto()} />
           <ProximoConsurso dados={`Concurso: ${lotofacil.numeroDoConcurso} -`} data={` ${lotofacil.dataPorExtenso}`} />
-
+          <div className="linha" style={{marginTop:'-345px'}}/>
+          <div className="linha" style={{marginTop:'91px'}}/>
         </div>
 
       </div>
@@ -50,6 +47,9 @@ export default function Lotofacil() {
 
   );
 }
+
+
+
 
 
 

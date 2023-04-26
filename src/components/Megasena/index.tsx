@@ -4,10 +4,7 @@ import Ganhador from "../ganhador/Ganhador";
 import MegaLogo from "../logo/MegaLogo";
 import MegaNumero from "../listNumeros/MegaNumeros";
 import ProximoConsurso from "../proximoConcurso/ProximoConcurso";
-
-
-import ValorMega from "../valor/ValorMega";
-
+import Valor from "../valor/Valor";
 import "../../app.css";
 
 export default function Megasena() {
@@ -31,13 +28,12 @@ export default function Megasena() {
         <div className="coluna_1">
           <MegaLogo />
           <DataSorteio data={megasena.dataProximoConcurso} />
-          <ValorMega valor={`R$ ${megasena.valorEstimadoProximoConcurso.toLocaleString()}`} />
+          <div style={{color:'#209869'}} ><Valor valor={megasena.valorEstimadoProximoConcurso.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })} /></div>
 
         </div>
 
         <div className="coluna_2">
-
-          <MegaNumero numeros={megasena.dezenas} />
+          <MegaNumero numeros={megasena.dezenas}/>
           <Ganhador ganhador={verificaMega()} />
           <ProximoConsurso dados={`Concurso: ${megasena.numeroDoConcurso} -`} data={` ${megasena.dataPorExtenso}`} />
 
