@@ -1,4 +1,4 @@
-import Lotofacil from "../components/lotofacil";
+import Lotofacil from "../components/Lotofacil";
 
 function Loto() {
     return (

@@ -1,4 +1,4 @@
-import Megasena from "../components/megasena";
+import Megasena from "../components/Megasena";
 
 function Mega() {
     return (

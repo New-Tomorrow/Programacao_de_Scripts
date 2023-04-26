@@ -1,4 +1,4 @@
-import Quinac from "../components/quina/Quina";
+import Quinac from "../components/Quina";
 
 function Quina() {
     return (
