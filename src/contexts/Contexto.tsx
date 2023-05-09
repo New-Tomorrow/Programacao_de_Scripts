@@ -6,18 +6,20 @@ const Contexto = createContext({} as LoteriaProps);
 
 function ContextoProvider({ children }: any) {
   const [megasena, setMegasena] = useState({} as Props);
-  const [lotofacil, setLotofacil] = useState({} as Props);
+  const [timemania, setTimemania] = useState({} as Props);
+  const [quina, setQuina] = useState({} as Props);
 
   useEffect(() => {
     (async () => {
       const resp = await Loteria.get();
       setMegasena(resp.megasena);
-      setLotofacil(resp.lotofacil);
+      setTimemania(resp.timemania);
+      setQuina(resp.quina);
     })()
   }, []);
 
   return (
-    <Contexto.Provider value={{megasena, lotofacil}}>
+    <Contexto.Provider value={{megasena, timemania, quina}}>
       {children}
     </Contexto.Provider>
   );

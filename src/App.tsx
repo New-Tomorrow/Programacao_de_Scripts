@@ -1,8 +1,13 @@
+import Carregando from "./components/Carregando/carregando";
 import { ContextoProvider } from "./contexts";
-import Principal from "./pages/Principal";
+import './app.css'
+
+
 
 function App() {
-  return <ContextoProvider><Principal/></ContextoProvider>
+  return <ContextoProvider><Carregando/></ContextoProvider>
 }
 
 export default App;
+
+
