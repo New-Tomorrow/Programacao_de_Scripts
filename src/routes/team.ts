@@ -1,7 +1,6 @@
 import { Router } from "express";
 import TeamController from "../controllers/TeamController";
 
-
 const routes = Router();
 
 routes.post('/', TeamController.create);

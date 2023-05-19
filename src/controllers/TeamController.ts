@@ -27,10 +27,6 @@ class TeamsController {
     return res.json(teams)
   }
 
-
-
-
-
   public async delete(req: Request, res: Response): Promise<Response> {
     const { id } = req.body
     const r = await AppDataSource
