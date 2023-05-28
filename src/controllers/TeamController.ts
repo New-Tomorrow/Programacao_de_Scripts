@@ -50,7 +50,7 @@ class TeamsController {
   }
 
   async termolist(req: Request, res: Response): Promise<Response> {
-    const termo: any = req.params.termo
+    const termo: any = req.params.termo.replace(/(^\w{1})|(\s+\w{1})/g, letra => letra.toUpperCase())
     const teamsRepository = AppDataSource.getRepository(Teams)
       .createQueryBuilder("time")
       .where("time.name like :name", { name: `%${termo}%` })
