@@ -19,7 +19,6 @@ export class Match {
     })
     host: Teams;
 
-    
     // cascade define que ao excluir o usuário os gastos serão excluídos
     @ManyToOne((type) => Teams, { onDelete: 'CASCADE' })
     // JoinColum é usado para definir o lado da relação que contém a "join column" com a FK
